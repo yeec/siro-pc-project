@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="title">滦平自来水微信公众号后台管理系统</div>
+    <div class="title">移动管理平台</div>
   </div>
 </template>
 

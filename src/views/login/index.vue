@@ -1,4 +1,5 @@
 <template>
+<div class="login">
   <div class="login-container">
     <el-form
       ref="loginForm"
@@ -8,7 +9,7 @@
       auto-complete="on"
       label-position="left"
     >
-      <h3 class="title">滦平自来水微信公众号管理系统</h3>
+      <h3 class="title">移动管理平台</h3>
       <el-form-item prop="username">
         <span class="svg-container"> <svg-icon icon-class="user" /> </span>
         <el-input
@@ -45,6 +46,7 @@
       </el-form-item>
     </el-form>
   </div>
+</div>
 </template>
 
 <script>
@@ -155,7 +157,9 @@ $light_gray: #eee;
 /* reset element-ui css */
 .login-container {
   background: url("./image/loginbar.png") no-repeat;
-  background-size: 100% 100%;
+  background-repeat: round;
+  background-size: cover;
+ 
   .el-input {
     display: inline-block;
     height: 47px;
@@ -187,11 +191,19 @@ $light_gray: #eee;
 $bg: #2d3a4b;
 $dark_gray: #889aa4;
 $light_gray: #eee;
+.login {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    
+}
 .login-container {
-  position: fixed;
+  position: relative;
   height: 100%;
-  width: 100%;
+  min-height: 303px;
+  min-width: 1440px;
   background-color: $bg;
+  overflow: auto;
   .login-form {
     position: absolute;
     left: 0;

@@ -4,6 +4,7 @@ import store from "../store";
 import { getToken } from "@/utils/auth";
 import { getTokenType } from "./auth";
 import { BASE_URI } from "@/config";
+import devMock from "./dev_mock";
 
 // 创建axios实例
 const service = axios.create({
@@ -14,6 +15,20 @@ const service = axios.create({
 // request拦截器
 service.interceptors.request.use(
   config => {
+    let str = config.url;
+    let index = str.lastIndexOf("/");
+    let productCode = str.substring(index + 1, str.length)
+    console.log("请求URL:" + config.url);
+    // 非打包环境 且不是自定义mock接口时，调用mock数据
+    if (
+      process.env.NODE_ENV !== "production" &&
+      devMock.includes(productCode)
+    ) {
+      config.url = `/mock/api/${productCode}.do`;
+    } else {
+      // 请求后端接口
+      config.url = `${config.url}`;
+    }
     if (
       store.getters.token &&
       !config.url.startsWith(BASE_URI + "/oauth/token") &&
@@ -36,7 +51,7 @@ service.interceptors.response.use(
      * code为非20000是抛错 可结合自己业务进行修改
      */
     const res = response.data;
-    if (response.config.url.startsWith(BASE_URI + "/oauth/")) {
+    if (response.config.url.indexOf("token") > 0) {
       return res;
     }
     if (res.code != 200) {

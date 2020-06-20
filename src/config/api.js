@@ -6,6 +6,7 @@ export const apiConfig = {
     resource: false,
     api: {
       login: BASE_URI + "/oauth/token",
+      // login: BASE_URI + "OM1101",
       checkToken: BASE_URI + "/oauth/check_token",
       resource: BASE_URI + "/auth/resources",
       logout: BASE_URI + "/oauth/logout"

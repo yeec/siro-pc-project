@@ -3,3 +3,4 @@ export const UPLOAD_URL = "/water/document/serve/";
 export const SERVERURL = "/water/document/upload";
 
 export const BASE_URI = "/water";
+// export const BASE_URI = "";

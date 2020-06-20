@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 function resolve(dir) {
   return path.join(__dirname, ".", dir);
 }
@@ -8,10 +9,51 @@ module.exports = {
     port: 8085,
     proxy: {
       "/water": {
-        target: "http://kj8axt.natappfree.cc",
-        // target: "http://192.168.1.15:9098",
+        target: "http://nbzlsmrg.hebeizjkbank.com",
         changeOrigin: true
       }
+    },
+    before(app) {
+      app.get("/mock/api/*", (req, resp) => {
+        try {
+          const str = req.originalUrl.split("/").pop();
+          let api = "";
+          if(str.indexOf("?") > 0){ // 包含？
+            api = str.split("?")[0]
+          }else{
+            api = str;
+          }
+          resp.setHeader("Content-Type", "application/json");
+          const file = path.join(
+            __dirname,
+            "./mock/api/",
+            api.replace("do", "json")
+          );
+          fs.createReadStream(file).pipe(resp);
+        } catch (e) {
+          console.log("app.get mock异常:" + e);
+        }
+      });
+      app.post("/mock/api/*", (req, resp) => {
+        try {
+          const str = req.originalUrl.split("/").pop();
+          let api = "";
+          if(str.indexOf("?") > 0){ // 包含？
+            api = str.split("?")[0]
+          }else{
+            api = str;
+          }
+          resp.setHeader("Content-Type", "application/json");
+          const file = path.join(
+            __dirname,
+            "./mock/api/",
+            api.replace("do", "json")
+          );
+          fs.createReadStream(file).pipe(resp);
+        } catch (e) {
+          console.log("app.post mock异常:" + e);
+        }
+      });
     }
   },
   chainWebpack: config => {
