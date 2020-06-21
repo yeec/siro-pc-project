@@ -57,6 +57,9 @@ module.exports = {
     }
   },
   chainWebpack: config => {
+    config.resolve.extensions['.js', '.vue', '.json']
+    config.resolve.alias
+    .set('@com', resolve('static/lib/index.js'))
     config.module.rules.delete("svg"); //重点:删除默认配置中处理svg,
     //const svgRule = config.module.rule('svg')
     //svgRule.uses.clear()
