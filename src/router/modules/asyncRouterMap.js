@@ -1,4 +1,5 @@
 export const asyncRouterMap = {
+  branch: () => import("@/views/branch"),
   user: () => import("@/views/user"),
   role: () => import("@/views/role"),
   resource: () => import("@/views/resource"),

@@ -1,1 +1,755 @@
-{"code":"200","message":"","value":[{"resourceCode":"2ffac17659e6451eb387393c7c284ff7","resourceName":"添加反馈","resourceTypeCode":"operator","path":"addFeedback","icon":"","authUrls":["/api/article/feedback/submit"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"4230f15f2044432cb5398f2e4538f20b","resourceName":"批量删除物业","resourceTypeCode":"operator","path":"deletes","icon":"","authUrls":["/api/generator/deletes"],"parentCode":"e5730b5ecf65482cacda82f99e442d5a","idx":""},{"resourceCode":"edee2b9353d3420ca3487bc651f012d7","resourceName":"新增物业","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/generator/save"],"parentCode":"e5730b5ecf65482cacda82f99e442d5a","idx":""},{"resourceCode":"c86a5492bfad40ea802bc2286d77eb2a","resourceName":"通知添加","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/article/add"],"parentCode":"867cb22eff7e49728af161dcf9db5d43","idx":""},{"resourceCode":"40e7309d7bf94120b4f37d2c5ff682ff","resourceName":"通知修改","resourceTypeCode":"operator","path":"modify","icon":"","authUrls":["/api/article/modify"],"parentCode":"867cb22eff7e49728af161dcf9db5d43","idx":""},{"resourceCode":"2218fe2c5d9c4c12bf1e4e9d1aacf53d","resourceName":"通知删除","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/article/delete"],"parentCode":"867cb22eff7e49728af161dcf9db5d43","idx":""},{"resourceCode":"329bf8c2c9f7481e8f8f0b2cedbcdf5d","resourceName":"通知列表","resourceTypeCode":"operator","path":"list","icon":"","authUrls":["/api/article/list"],"parentCode":"867cb22eff7e49728af161dcf9db5d43","idx":""},{"resourceCode":"a451b9fb51364ffca072c690a0c5fbe5","resourceName":"文章详情","resourceTypeCode":"operator","path":"info","icon":"","authUrls":["/api/article/info"],"parentCode":"867cb22eff7e49728af161dcf9db5d43","idx":""},{"resourceCode":"8381b3414106489eaf9bf36a010c5b58","resourceName":"文章添加","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/article/add"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"c5723248e9614e15a10d699a95800ade","resourceName":"文章修改","resourceTypeCode":"operator","path":"modify","icon":"","authUrls":["/api/article/modify"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"fe059326b204474dad6a30a5d98a2d91","resourceName":"文章删除","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/article/delete"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"f582e6f7f8ce4f79bd3ce5a87393f9a5","resourceName":"文章列表","resourceTypeCode":"operator","path":"list","icon":"","authUrls":["/api/article/list"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"f8124d4fdb7947ecace9654c31b50861","resourceName":"文章详情","resourceTypeCode":"operator","path":"info","icon":"","authUrls":["/api/article/info"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"a4e6f4ad56e8486b93b457a9427bae8e","resourceName":"文章详情","resourceTypeCode":"operator","path":"showFlag","icon":"","authUrls":["/api/article/updateShowFlag"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"a6c4dc1cb2f74f26af4e6404ab5be253","resourceName":"反馈列表","resourceTypeCode":"operator","path":"feedbackList","icon":"","authUrls":["/api/article/feedback/list"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"b4c18fe76b4f459ba4602a86003ea568","resourceName":"更新物业","resourceTypeCode":"operator","path":"update","icon":"","authUrls":["/api/generator/update"],"parentCode":"e5730b5ecf65482cacda82f99e442d5a","idx":""},{"resourceCode":"1822aa32c3164d0ebbb90118f257bbb3","resourceName":"反馈回复","resourceTypeCode":"operator","path":"reply","icon":"","authUrls":["/api/article/feedback/reply"],"parentCode":"595081255af04d12b428fbde48ec7d7e","idx":""},{"resourceCode":"2d37b33ad3c94c118742aa753b559559","resourceName":"查询联系方式","resourceTypeCode":"operator","path":"search","icon":"","authUrls":["/water/communityContact/list"],"parentCode":"2653139ac4954e1a9ee429d9729e1fa1","idx":""},{"resourceCode":"f12cae4b78c34008acc8370ecd997b84","resourceName":"新增联系方式","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/water/communityContact/save"],"parentCode":"2653139ac4954e1a9ee429d9729e1fa1","idx":""},{"resourceCode":"3016f5d361184bc6988efaf067644d63","resourceName":"编辑联系方式","resourceTypeCode":"operator","path":"edit","icon":"","authUrls":["/water/communityContact/update"],"parentCode":"2653139ac4954e1a9ee429d9729e1fa1","idx":""},{"resourceCode":"b1a41e0e51524b208028201cf3c48d08","resourceName":"删除联系方式","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/water/communityContact/delete"],"parentCode":"2653139ac4954e1a9ee429d9729e1fa1","idx":""},{"resourceCode":"5c7f2b70ce8e4c5ea2c91be96cc036ed","resourceName":"重置密码","resourceTypeCode":"operator","path":"resetpwd","icon":"","authUrls":["/water/user/resetpwd"],"parentCode":"system_user","idx":""},{"resourceCode":"1b55ab9034a949339f8b37067a0b0b95","resourceName":"分配角色","resourceTypeCode":"operator","path":"uproles","icon":"","authUrls":["/water/user/roles","/water/role/list","/water/user/uprole"],"parentCode":"system_user","idx":""},{"resourceCode":"36d36a6a320847a1a7b325208d1350da","resourceName":"查询角色","resourceTypeCode":"operator","path":"search","icon":"","authUrls":["/water/role/list"],"parentCode":"system_role","idx":""},{"resourceCode":"d00914ddbc774eb2a6d1140ed7f49f33","resourceName":"删除角色","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/water/role/delete"],"parentCode":"system_role","idx":""},{"resourceCode":"7bbb82fb027844cea8727e04aeec7433","resourceName":"更新角色","resourceTypeCode":"operator","path":"update","icon":"","authUrls":["/water/role/modify"],"parentCode":"system_role","idx":""},{"resourceCode":"b0fc4db208d4432c85ec997a88c291ad","resourceName":"新增角色","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/water/role/add"],"parentCode":"system_role","idx":""},{"resourceCode":"8b0df88be8274731bb2f39f3805d6661","resourceName":"角色授权","resourceTypeCode":"operator","path":"upresource","icon":"","authUrls":["/water/role/upresource","/water/resource/tree","/water/role/resources"],"parentCode":"system_role","idx":""},{"resourceCode":"15207c59a87846a4a60c0eab446bca45","resourceName":"查询在线留言列表","resourceTypeCode":"operator","path":"query","icon":"","authUrls":["/water/onlineMessage/query"],"parentCode":"ec3303f0264f416e8448897db4281a8c","idx":""},{"resourceCode":"af33dc869be74d5bbd3c5631a816e03f","resourceName":"查询物业","resourceTypeCode":"operator","path":"search","icon":"","authUrls":["/api/generator/list","/api/generator/info","/api/generator/getOne"],"parentCode":"e5730b5ecf65482cacda82f99e442d5a","idx":""},{"resourceCode":"f283a9098fa54784ac12890eb1d55aea","resourceName":"文章添加","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/article/add"],"parentCode":"c110dec1eebe4f65a7552872c6ffe355","idx":""},{"resourceCode":"4fb526faf4db4526af38e76a37a9d546","resourceName":"文章修改","resourceTypeCode":"operator","path":"modify","icon":"","authUrls":["/api/article/modify"],"parentCode":"c110dec1eebe4f65a7552872c6ffe355","idx":""},{"resourceCode":"b0b4eeba51d848f98eb6d5b0d026d518","resourceName":"文章删除","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/article/delete"],"parentCode":"c110dec1eebe4f65a7552872c6ffe355","idx":""},{"resourceCode":"3c0a9ff61e4347a2a89af46c1b9f562c","resourceName":"文章列表","resourceTypeCode":"operator","path":"list","icon":"","authUrls":["/api/article/list"],"parentCode":"c110dec1eebe4f65a7552872c6ffe355","idx":""},{"resourceCode":"58d4b7c56afc4d089af346259592c073","resourceName":"文章详情","resourceTypeCode":"operator","path":"info","icon":"","authUrls":["/api/article/info"],"parentCode":"c110dec1eebe4f65a7552872c6ffe355","idx":""},{"resourceCode":"c275a1fe4dc94d6daf891a20e6dfbf62","resourceName":"查询资源","resourceTypeCode":"operator","path":"search","icon":"","authUrls":["/api/resource/tree"],"parentCode":"system_resource","idx":""},{"resourceCode":"9a0585c88fdf467dbcd977d121ca4732","resourceName":"删除资源","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/resource/delete"],"parentCode":"system_resource","idx":""},{"resourceCode":"f892ccfa4ccb4fc5914f649e4ad75c11","resourceName":"更新资源","resourceTypeCode":"operator","path":"update","icon":"","authUrls":["/api/resource/modify"],"parentCode":"system_resource","idx":""},{"resourceCode":"cd8b0d60f45743ff80a6d119a98185c7","resourceName":"新增资源","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/resource/add"],"parentCode":"system_resource","idx":""},{"resourceCode":"053381593794435d9854232f1533c6de","resourceName":"查询用户","resourceTypeCode":"operator","path":"search","icon":"","authUrls":["/api/rbac/user/list","/api/rbac/user/detail"],"parentCode":"system_user","idx":""},{"resourceCode":"33488d277c2c47628d5d5d4701495210","resourceName":"删除用户","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/rbac/user/delete"],"parentCode":"system_user","idx":""},{"resourceCode":"f52d23edc3f6430c91db2f4b0d6c1043","resourceName":"更新用户","resourceTypeCode":"operator","path":"update","icon":"","authUrls":["/api/rbac/user/update"],"parentCode":"system_user","idx":""},{"resourceCode":"e3e388fc0b204733ac9fb74b389d7609","resourceName":"新增用户","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/rbac/user/add"],"parentCode":"system_user","idx":""},{"resourceCode":"198a4e7d08304c299db7b024b7c43ff4","resourceName":"添加水卡","resourceTypeCode":"operator","path":"add","icon":"","authUrls":["/api/waterCard/add"],"parentCode":"87b3f7dbdd1b4c269ae75e632a0358d9","idx":""},{"resourceCode":"d15037b7ed8f41889ca8e1c63a55d38f","resourceName":"修改水卡信息","resourceTypeCode":"operator","path":"update","icon":"","authUrls":["/api/waterCard/update"],"parentCode":"87b3f7dbdd1b4c269ae75e632a0358d9","idx":""},{"resourceCode":"7d98501ba2e14e76bf191883583294eb","resourceName":"删除水卡","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["api/waterCard/delete"],"parentCode":"87b3f7dbdd1b4c269ae75e632a0358d9","idx":""},{"resourceCode":"d7667ef6010a40cf8f23a6b175d20a51","resourceName":"查询水卡列表","resourceTypeCode":"operator","path":"selectByCondition","icon":"","authUrls":["/api/waterCard/selectByCondition"],"parentCode":"87b3f7dbdd1b4c269ae75e632a0358d9","idx":""},{"resourceCode":"d25290de00e24c38b402e14a6cc70e43","resourceName":"查询责任人下拉列表","resourceTypeCode":"operator","path":"selectDutyUser","icon":"","authUrls":["/api/waterCard/selectDutyUser"],"parentCode":"87b3f7dbdd1b4c269ae75e632a0358d9","idx":""},{"resourceCode":"323e023450744dc8b3c916567b1e5fe1","resourceName":"删除物业","resourceTypeCode":"operator","path":"delete","icon":"","authUrls":["/api/generator/delete"],"parentCode":"e5730b5ecf65482cacda82f99e442d5a","idx":""},{"resourceCode":"46c642f6136c4e82b34a611a1a4624ba","resourceName":"查询缴费列表","resourceTypeCode":"operator","path":"selectByCondition","icon":"","authUrls":["/api/chargeOrder/selectByCondition"],"parentCode":"8bfe65233d62494bbbee2a089a0722c5","idx":""},{"resourceCode":"798a98ba3d0d4a9499996b8180c1d7ab","resourceName":"处理缴费","resourceTypeCode":"operator","path":"handle","icon":"","authUrls":["/api/chargeOrder/handle"],"parentCode":"8bfe65233d62494bbbee2a089a0722c5","idx":""},{"resourceCode":"1c3be93906464b36a1e2fcd02c0c897c","resourceName":"基础设置","resourceTypeCode":"menu","path":"baseSet","icon":"icon_enclosure","authUrls":"","parentCode":"0","idx":0},{"resourceCode":"system_user","resourceName":"用户管理","resourceTypeCode":"menu_item","path":"user","icon":"icon_add friend","authUrls":"","parentCode":"system_settings","idx":1},{"resourceCode":"system_role","resourceName":"角色管理","resourceTypeCode":"menu_item","path":"role","icon":"icon_cooperation","authUrls":"","parentCode":"system_settings","idx":1},{"resourceCode":"system_resource","resourceName":"资源管理","resourceTypeCode":"menu_item","path":"resource","icon":"icon_diamond","authUrls":"","parentCode":"system_settings","idx":1},{"resourceCode":"system_settings","resourceName":"系统设置","resourceTypeCode":"menu","path":"system","icon":"icon-setting","authUrls":"","parentCode":"0","idx":1},{"resourceCode":"8bfe65233d62494bbbee2a089a0722c5","resourceName":"缴费管理","resourceTypeCode":"menu_item","path":"chargeOrder","icon":"icon_asset","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":1},{"resourceCode":"867cb22eff7e49728af161dcf9db5d43","resourceName":"通知管理","resourceTypeCode":"menu_item","path":"info","icon":"icon_notice","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":2},{"resourceCode":"595081255af04d12b428fbde48ec7d7e","resourceName":"资讯管理","resourceTypeCode":"menu_item","path":"article","icon":"icon_edit","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":3},{"resourceCode":"87b3f7dbdd1b4c269ae75e632a0358d9","resourceName":"水卡管理","resourceTypeCode":"menu_item","path":"waterCard","icon":"icon_personal information","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":4},{"resourceCode":"e5730b5ecf65482cacda82f99e442d5a","resourceName":"公司简介","resourceTypeCode":"menu_item","path":"baseBasicInfo","icon":"icon_company","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":5},{"resourceCode":"2653139ac4954e1a9ee429d9729e1fa1","resourceName":"联系我们","resourceTypeCode":"menu_item","path":"contact","icon":"icon_phone","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":6},{"resourceCode":"ec3303f0264f416e8448897db4281a8c","resourceName":"在线留言","resourceTypeCode":"menu_item","path":"onlineMessage","icon":"icon_news","authUrls":"","parentCode":"1c3be93906464b36a1e2fcd02c0c897c","idx":8}]}
+{
+    "code": "200",
+    "message": "",
+    "value": [
+        {
+            "resourceCode": "2ffac17659e6451eb387393c7c284ff7",
+            "resourceName": "添加反馈",
+            "resourceTypeCode": "operator",
+            "path": "addFeedback",
+            "icon": "",
+            "authUrls": [
+                "/api/article/feedback/submit"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "4230f15f2044432cb5398f2e4538f20b",
+            "resourceName": "批量删除物业",
+            "resourceTypeCode": "operator",
+            "path": "deletes",
+            "icon": "",
+            "authUrls": [
+                "/api/generator/deletes"
+            ],
+            "parentCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "idx": ""
+        },
+        {
+            "resourceCode": "edee2b9353d3420ca3487bc651f012d7",
+            "resourceName": "新增物业",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/generator/save"
+            ],
+            "parentCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "idx": ""
+        },
+        {
+            "resourceCode": "c86a5492bfad40ea802bc2286d77eb2a",
+            "resourceName": "通知添加",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/article/add"
+            ],
+            "parentCode": "867cb22eff7e49728af161dcf9db5d43",
+            "idx": ""
+        },
+        {
+            "resourceCode": "40e7309d7bf94120b4f37d2c5ff682ff",
+            "resourceName": "通知修改",
+            "resourceTypeCode": "operator",
+            "path": "modify",
+            "icon": "",
+            "authUrls": [
+                "/api/article/modify"
+            ],
+            "parentCode": "867cb22eff7e49728af161dcf9db5d43",
+            "idx": ""
+        },
+        {
+            "resourceCode": "2218fe2c5d9c4c12bf1e4e9d1aacf53d",
+            "resourceName": "通知删除",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/article/delete"
+            ],
+            "parentCode": "867cb22eff7e49728af161dcf9db5d43",
+            "idx": ""
+        },
+        {
+            "resourceCode": "329bf8c2c9f7481e8f8f0b2cedbcdf5d",
+            "resourceName": "通知列表",
+            "resourceTypeCode": "operator",
+            "path": "list",
+            "icon": "",
+            "authUrls": [
+                "/api/article/list"
+            ],
+            "parentCode": "867cb22eff7e49728af161dcf9db5d43",
+            "idx": ""
+        },
+        {
+            "resourceCode": "a451b9fb51364ffca072c690a0c5fbe5",
+            "resourceName": "文章详情",
+            "resourceTypeCode": "operator",
+            "path": "info",
+            "icon": "",
+            "authUrls": [
+                "/api/article/info"
+            ],
+            "parentCode": "867cb22eff7e49728af161dcf9db5d43",
+            "idx": ""
+        },
+        {
+            "resourceCode": "8381b3414106489eaf9bf36a010c5b58",
+            "resourceName": "文章添加",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/article/add"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "c5723248e9614e15a10d699a95800ade",
+            "resourceName": "文章修改",
+            "resourceTypeCode": "operator",
+            "path": "modify",
+            "icon": "",
+            "authUrls": [
+                "/api/article/modify"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "fe059326b204474dad6a30a5d98a2d91",
+            "resourceName": "文章删除",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/article/delete"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f582e6f7f8ce4f79bd3ce5a87393f9a5",
+            "resourceName": "文章列表",
+            "resourceTypeCode": "operator",
+            "path": "list",
+            "icon": "",
+            "authUrls": [
+                "/api/article/list"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f8124d4fdb7947ecace9654c31b50861",
+            "resourceName": "文章详情",
+            "resourceTypeCode": "operator",
+            "path": "info",
+            "icon": "",
+            "authUrls": [
+                "/api/article/info"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "a4e6f4ad56e8486b93b457a9427bae8e",
+            "resourceName": "文章详情",
+            "resourceTypeCode": "operator",
+            "path": "showFlag",
+            "icon": "",
+            "authUrls": [
+                "/api/article/updateShowFlag"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "a6c4dc1cb2f74f26af4e6404ab5be253",
+            "resourceName": "反馈列表",
+            "resourceTypeCode": "operator",
+            "path": "feedbackList",
+            "icon": "",
+            "authUrls": [
+                "/api/article/feedback/list"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "b4c18fe76b4f459ba4602a86003ea568",
+            "resourceName": "更新物业",
+            "resourceTypeCode": "operator",
+            "path": "update",
+            "icon": "",
+            "authUrls": [
+                "/api/generator/update"
+            ],
+            "parentCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "idx": ""
+        },
+        {
+            "resourceCode": "1822aa32c3164d0ebbb90118f257bbb3",
+            "resourceName": "反馈回复",
+            "resourceTypeCode": "operator",
+            "path": "reply",
+            "icon": "",
+            "authUrls": [
+                "/api/article/feedback/reply"
+            ],
+            "parentCode": "595081255af04d12b428fbde48ec7d7e",
+            "idx": ""
+        },
+        {
+            "resourceCode": "2d37b33ad3c94c118742aa753b559559",
+            "resourceName": "查询联系方式",
+            "resourceTypeCode": "operator",
+            "path": "search",
+            "icon": "",
+            "authUrls": [
+                "/water/communityContact/list"
+            ],
+            "parentCode": "2653139ac4954e1a9ee429d9729e1fa1",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f12cae4b78c34008acc8370ecd997b84",
+            "resourceName": "新增联系方式",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/water/communityContact/save"
+            ],
+            "parentCode": "2653139ac4954e1a9ee429d9729e1fa1",
+            "idx": ""
+        },
+        {
+            "resourceCode": "3016f5d361184bc6988efaf067644d63",
+            "resourceName": "编辑联系方式",
+            "resourceTypeCode": "operator",
+            "path": "edit",
+            "icon": "",
+            "authUrls": [
+                "/water/communityContact/update"
+            ],
+            "parentCode": "2653139ac4954e1a9ee429d9729e1fa1",
+            "idx": ""
+        },
+        {
+            "resourceCode": "b1a41e0e51524b208028201cf3c48d08",
+            "resourceName": "删除联系方式",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/water/communityContact/delete"
+            ],
+            "parentCode": "2653139ac4954e1a9ee429d9729e1fa1",
+            "idx": ""
+        },
+        {
+            "resourceCode": "5c7f2b70ce8e4c5ea2c91be96cc036ed",
+            "resourceName": "重置密码",
+            "resourceTypeCode": "operator",
+            "path": "resetpwd",
+            "icon": "",
+            "authUrls": [
+                "/water/user/resetpwd"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "1b55ab9034a949339f8b37067a0b0b95",
+            "resourceName": "分配角色",
+            "resourceTypeCode": "operator",
+            "path": "uproles",
+            "icon": "",
+            "authUrls": [
+                "/water/user/roles",
+                "/water/role/list",
+                "/water/user/uprole"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "36d36a6a320847a1a7b325208d1350da",
+            "resourceName": "查询角色",
+            "resourceTypeCode": "operator",
+            "path": "search",
+            "icon": "",
+            "authUrls": [
+                "/water/role/list"
+            ],
+            "parentCode": "system_role",
+            "idx": ""
+        },
+        {
+            "resourceCode": "d00914ddbc774eb2a6d1140ed7f49f33",
+            "resourceName": "删除角色",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/water/role/delete"
+            ],
+            "parentCode": "system_role",
+            "idx": ""
+        },
+        {
+            "resourceCode": "7bbb82fb027844cea8727e04aeec7433",
+            "resourceName": "更新角色",
+            "resourceTypeCode": "operator",
+            "path": "update",
+            "icon": "",
+            "authUrls": [
+                "/water/role/modify"
+            ],
+            "parentCode": "system_role",
+            "idx": ""
+        },
+        {
+            "resourceCode": "b0fc4db208d4432c85ec997a88c291ad",
+            "resourceName": "新增角色",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/water/role/add"
+            ],
+            "parentCode": "system_role",
+            "idx": ""
+        },
+        {
+            "resourceCode": "8b0df88be8274731bb2f39f3805d6661",
+            "resourceName": "角色授权",
+            "resourceTypeCode": "operator",
+            "path": "upresource",
+            "icon": "",
+            "authUrls": [
+                "/water/role/upresource",
+                "/water/resource/tree",
+                "/water/role/resources"
+            ],
+            "parentCode": "system_role",
+            "idx": ""
+        },
+        {
+            "resourceCode": "15207c59a87846a4a60c0eab446bca45",
+            "resourceName": "查询在线留言列表",
+            "resourceTypeCode": "operator",
+            "path": "query",
+            "icon": "",
+            "authUrls": [
+                "/water/onlineMessage/query"
+            ],
+            "parentCode": "ec3303f0264f416e8448897db4281a8c",
+            "idx": ""
+        },
+        {
+            "resourceCode": "af33dc869be74d5bbd3c5631a816e03f",
+            "resourceName": "查询物业",
+            "resourceTypeCode": "operator",
+            "path": "search",
+            "icon": "",
+            "authUrls": [
+                "/api/generator/list",
+                "/api/generator/info",
+                "/api/generator/getOne"
+            ],
+            "parentCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f283a9098fa54784ac12890eb1d55aea",
+            "resourceName": "文章添加",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/article/add"
+            ],
+            "parentCode": "c110dec1eebe4f65a7552872c6ffe355",
+            "idx": ""
+        },
+        {
+            "resourceCode": "4fb526faf4db4526af38e76a37a9d546",
+            "resourceName": "文章修改",
+            "resourceTypeCode": "operator",
+            "path": "modify",
+            "icon": "",
+            "authUrls": [
+                "/api/article/modify"
+            ],
+            "parentCode": "c110dec1eebe4f65a7552872c6ffe355",
+            "idx": ""
+        },
+        {
+            "resourceCode": "b0b4eeba51d848f98eb6d5b0d026d518",
+            "resourceName": "文章删除",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/article/delete"
+            ],
+            "parentCode": "c110dec1eebe4f65a7552872c6ffe355",
+            "idx": ""
+        },
+        {
+            "resourceCode": "3c0a9ff61e4347a2a89af46c1b9f562c",
+            "resourceName": "文章列表",
+            "resourceTypeCode": "operator",
+            "path": "list",
+            "icon": "",
+            "authUrls": [
+                "/api/article/list"
+            ],
+            "parentCode": "c110dec1eebe4f65a7552872c6ffe355",
+            "idx": ""
+        },
+        {
+            "resourceCode": "58d4b7c56afc4d089af346259592c073",
+            "resourceName": "文章详情",
+            "resourceTypeCode": "operator",
+            "path": "info",
+            "icon": "",
+            "authUrls": [
+                "/api/article/info"
+            ],
+            "parentCode": "c110dec1eebe4f65a7552872c6ffe355",
+            "idx": ""
+        },
+        {
+            "resourceCode": "c275a1fe4dc94d6daf891a20e6dfbf62",
+            "resourceName": "查询资源",
+            "resourceTypeCode": "operator",
+            "path": "search",
+            "icon": "",
+            "authUrls": [
+                "/api/resource/tree"
+            ],
+            "parentCode": "system_resource",
+            "idx": ""
+        },
+        {
+            "resourceCode": "9a0585c88fdf467dbcd977d121ca4732",
+            "resourceName": "删除资源",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/resource/delete"
+            ],
+            "parentCode": "system_resource",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f892ccfa4ccb4fc5914f649e4ad75c11",
+            "resourceName": "更新资源",
+            "resourceTypeCode": "operator",
+            "path": "update",
+            "icon": "",
+            "authUrls": [
+                "/api/resource/modify"
+            ],
+            "parentCode": "system_resource",
+            "idx": ""
+        },
+        {
+            "resourceCode": "cd8b0d60f45743ff80a6d119a98185c7",
+            "resourceName": "新增资源",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/resource/add"
+            ],
+            "parentCode": "system_resource",
+            "idx": ""
+        },
+        {
+            "resourceCode": "053381593794435d9854232f1533c6de",
+            "resourceName": "查询用户",
+            "resourceTypeCode": "operator",
+            "path": "search",
+            "icon": "",
+            "authUrls": [
+                "/api/rbac/user/list",
+                "/api/rbac/user/detail"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "33488d277c2c47628d5d5d4701495210",
+            "resourceName": "删除用户",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/rbac/user/delete"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "f52d23edc3f6430c91db2f4b0d6c1043",
+            "resourceName": "更新用户",
+            "resourceTypeCode": "operator",
+            "path": "update",
+            "icon": "",
+            "authUrls": [
+                "/api/rbac/user/update"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "e3e388fc0b204733ac9fb74b389d7609",
+            "resourceName": "新增用户",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/rbac/user/add"
+            ],
+            "parentCode": "system_user",
+            "idx": ""
+        },
+        {
+            "resourceCode": "198a4e7d08304c299db7b024b7c43ff4",
+            "resourceName": "添加水卡",
+            "resourceTypeCode": "operator",
+            "path": "add",
+            "icon": "",
+            "authUrls": [
+                "/api/waterCard/add"
+            ],
+            "parentCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "idx": ""
+        },
+        {
+            "resourceCode": "d15037b7ed8f41889ca8e1c63a55d38f",
+            "resourceName": "修改水卡信息",
+            "resourceTypeCode": "operator",
+            "path": "update",
+            "icon": "",
+            "authUrls": [
+                "/api/waterCard/update"
+            ],
+            "parentCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "idx": ""
+        },
+        {
+            "resourceCode": "7d98501ba2e14e76bf191883583294eb",
+            "resourceName": "删除水卡",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "api/waterCard/delete"
+            ],
+            "parentCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "idx": ""
+        },
+        {
+            "resourceCode": "d7667ef6010a40cf8f23a6b175d20a51",
+            "resourceName": "查询水卡列表",
+            "resourceTypeCode": "operator",
+            "path": "selectByCondition",
+            "icon": "",
+            "authUrls": [
+                "/api/waterCard/selectByCondition"
+            ],
+            "parentCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "idx": ""
+        },
+        {
+            "resourceCode": "d25290de00e24c38b402e14a6cc70e43",
+            "resourceName": "查询责任人下拉列表",
+            "resourceTypeCode": "operator",
+            "path": "selectDutyUser",
+            "icon": "",
+            "authUrls": [
+                "/api/waterCard/selectDutyUser"
+            ],
+            "parentCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "idx": ""
+        },
+        {
+            "resourceCode": "323e023450744dc8b3c916567b1e5fe1",
+            "resourceName": "删除物业",
+            "resourceTypeCode": "operator",
+            "path": "delete",
+            "icon": "",
+            "authUrls": [
+                "/api/generator/delete"
+            ],
+            "parentCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "idx": ""
+        },
+        {
+            "resourceCode": "46c642f6136c4e82b34a611a1a4624ba",
+            "resourceName": "查询缴费列表",
+            "resourceTypeCode": "operator",
+            "path": "selectByCondition",
+            "icon": "",
+            "authUrls": [
+                "/api/chargeOrder/selectByCondition"
+            ],
+            "parentCode": "8bfe65233d62494bbbee2a089a0722c5",
+            "idx": ""
+        },
+        {
+            "resourceCode": "798a98ba3d0d4a9499996b8180c1d7ab",
+            "resourceName": "处理缴费",
+            "resourceTypeCode": "operator",
+            "path": "handle",
+            "icon": "",
+            "authUrls": [
+                "/api/chargeOrder/handle"
+            ],
+            "parentCode": "8bfe65233d62494bbbee2a089a0722c5",
+            "idx": ""
+        },
+        {
+            "resourceCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "resourceName": "基础设置",
+            "resourceTypeCode": "menu",
+            "path": "baseSet",
+            "icon": "icon_enclosure",
+            "authUrls": "",
+            "parentCode": "0",
+            "idx": 0
+        },
+        {
+            "resourceCode": "system_user",
+            "resourceName": "用户管理",
+            "resourceTypeCode": "menu_item",
+            "path": "user",
+            "icon": "icon_add friend",
+            "authUrls": "",
+            "parentCode": "system_settings",
+            "idx": 1
+        },
+        {
+            "resourceCode": "system_branch",
+            "resourceName": "机构管理",
+            "resourceTypeCode": "menu_item",
+            "path": "branch",
+            "icon": "icon_add friend",
+            "authUrls": "",
+            "parentCode": "system_settings",
+            "idx": 1
+        },
+        {
+            "resourceCode": "system_role",
+            "resourceName": "角色管理",
+            "resourceTypeCode": "menu_item",
+            "path": "role",
+            "icon": "icon_cooperation",
+            "authUrls": "",
+            "parentCode": "system_settings",
+            "idx": 1
+        },
+        {
+            "resourceCode": "system_resource",
+            "resourceName": "资源管理",
+            "resourceTypeCode": "menu_item",
+            "path": "resource",
+            "icon": "icon_diamond",
+            "authUrls": "",
+            "parentCode": "system_settings",
+            "idx": 1
+        },
+        {
+            "resourceCode": "system_settings",
+            "resourceName": "系统设置",
+            "resourceTypeCode": "menu",
+            "path": "system",
+            "icon": "icon-setting",
+            "authUrls": "",
+            "parentCode": "0",
+            "idx": 1
+        },
+        {
+            "resourceCode": "8bfe65233d62494bbbee2a089a0722c5",
+            "resourceName": "缴费管理",
+            "resourceTypeCode": "menu_item",
+            "path": "chargeOrder",
+            "icon": "icon_asset",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 1
+        },
+        {
+            "resourceCode": "867cb22eff7e49728af161dcf9db5d43",
+            "resourceName": "通知管理",
+            "resourceTypeCode": "menu_item",
+            "path": "info",
+            "icon": "icon_notice",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 2
+        },
+        {
+            "resourceCode": "595081255af04d12b428fbde48ec7d7e",
+            "resourceName": "资讯管理",
+            "resourceTypeCode": "menu_item",
+            "path": "article",
+            "icon": "icon_edit",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 3
+        },
+        {
+            "resourceCode": "87b3f7dbdd1b4c269ae75e632a0358d9",
+            "resourceName": "水卡管理",
+            "resourceTypeCode": "menu_item",
+            "path": "waterCard",
+            "icon": "icon_personal information",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 4
+        },
+        {
+            "resourceCode": "e5730b5ecf65482cacda82f99e442d5a",
+            "resourceName": "公司简介",
+            "resourceTypeCode": "menu_item",
+            "path": "baseBasicInfo",
+            "icon": "icon_company",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 5
+        },
+        {
+            "resourceCode": "2653139ac4954e1a9ee429d9729e1fa1",
+            "resourceName": "联系我们",
+            "resourceTypeCode": "menu_item",
+            "path": "contact",
+            "icon": "icon_phone",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 6
+        },
+        {
+            "resourceCode": "ec3303f0264f416e8448897db4281a8c",
+            "resourceName": "在线留言",
+            "resourceTypeCode": "menu_item",
+            "path": "onlineMessage",
+            "icon": "icon_news",
+            "authUrls": "",
+            "parentCode": "1c3be93906464b36a1e2fcd02c0c897c",
+            "idx": 8
+        }
+    ]
+}
