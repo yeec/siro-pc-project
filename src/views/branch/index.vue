@@ -17,58 +17,40 @@
           </com-select>
         </com-form-item>
         <com-form-item>
-          <com-button
-            type="primary"
-            @click="onSearchUser"
-            icon="el-icon-search"
-          >查询</com-button>
+          <com-button type="primary" @click="onSearchUser" icon="el-icon-search">查询</com-button>
         </com-form-item>
-         <com-form-item>
-          <com-button
-            type="primary"
-            @click="addBranch"
-            icon="el-icon-plus"
-            >新增</com-button
-          >
+        <com-form-item>
+          <com-button type="primary" @click="addBranch" icon="el-icon-plus">新增</com-button>
         </com-form-item>
       </com-form>
     </com-row>
-    <com-container style="height: 500px; border: 1px solid #eee">
-      <com-aside width="200px" style="background-color: rgb(238, 241, 246)">
-        <com-tree
-          :data="data"
-          :props="defaultProps"
-          @node-click="handleNodeClick"
-          style="width: 100%"
-        ></com-tree>
-      </com-aside>
-      <com-container>
-        <com-header style="text-align: right; font-size: 12px">
-            <i class="el-icon-sunset"  style="margin-right: 15px"></i>
-          <span>机构名称</span>
-        </com-header>
-        <com-main>
-          <com-table :data="tableData">
-            <com-table-column prop="date" label="日期" width="140"></com-table-column>
-            <com-table-column prop="name" label="姓名" width="120"></com-table-column>
-            <com-table-column prop="address" label="地址"></com-table-column>
-            <com-table-column fixed="right" label="操作" width="240">
-              <template slot-scope="scope">
-                <com-button @click="handleClick(scope.row)" type="text" size="small">查看</com-button>
-                <com-button @click="modifyBranch(scope.row)" type="text" size="small">修改</com-button>
-                <com-popconfirm
-                  style="margin-left:0.6rem"
-                  @onConfirm="delBranch(scope.row)"
-                  title="确定删除吗？"
-                >
-                  <com-button type="text" slot="reference" size="small">删除</com-button>
-                </com-popconfirm>
-              </template>
-            </com-table-column>
-          </com-table>
-        </com-main>
-      </com-container>
-    </com-container>
+
+    <com-table
+      :data="tableData"
+      style="width: 100%;margin-bottom: 20px;"
+      row-key="id"
+      border
+      default-expand-all
+      :tree-props="{children: 'children', hasChildren: 'hasChildren'}"
+    >
+      <com-table-column prop="date" label="机构名称" width="180"></com-table-column>
+      <com-table-column prop="name" label="机构代码" width="180"></com-table-column>
+      <com-table-column prop="address" label="机构级别" width="180"></com-table-column>
+      <com-table-column prop="type" label="启用状态" width="180"></com-table-column>
+      <com-table-column prop="customer" label="有无用户" width="180"></com-table-column>
+      <com-table-column fixed="right" label="操作" width="180">
+        <template slot-scope="scope">
+          <com-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</com-button>
+          <com-popconfirm
+            style="margin-left:0.6rem"
+            @onConfirm="handleDelete(scope.$index, scope.row)"
+            title="确定删除吗？"
+          >
+            <com-button slot="reference" size="mini" type="danger">删除</com-button>
+          </com-popconfirm>
+        </template>
+      </com-table-column>
+    </com-table>
   </div>
 </template>
 <script>
@@ -132,99 +114,92 @@ export default {
         { label: "法人3", value: "phone" },
         { label: "法人4", value: "email" },
       ],
-      data: [
-        {
-          label: "一机构 1",
-          children: [
-            {
-              label: "二机构 1-1",
-              children: [
-                {
-                  label: "三机构 1-1-1",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "一机构 2",
-          children: [
-            {
-              label: "二机构 2-1",
-              children: [
-                {
-                  label: "三机构 2-1-1",
-                },
-              ],
-            },
-            {
-              label: "二机构 2-2",
-              children: [
-                {
-                  label: "三机构 2-2-1",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "一机构 3",
-          children: [
-            {
-              label: "二机构 3-1",
-              children: [
-                {
-                  label: "三机构 3-1-1",
-                },
-              ],
-            },
-            {
-              label: "二机构 3-2",
-              children: [
-                {
-                  label: "三机构 3-2-1",
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      defaultProps: {
-        children: "children",
-        label: "label",
-      },
       tableData: [
         {
-          date: "2016-05-02",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333,
+          id: 1,
+          date: "齐鲁银行总行",
+          name: "866000001",
+          address: "总行",
+          type: "启用",
+          customer: "有",
         },
         {
-          date: "2016-05-04",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1517 弄",
-          zip: 200333,
+          id: 2,
+          date: "银行总行",
+          name: "866000000",
+          address: "总行",
+          type: "启用",
+          customer: "有",
+          children: [
+            {
+              id: 33,
+              date: "分行",
+              name: "866000000",
+              address: "分行",
+              type: "启用",
+              customer: "有",
+            },
+            {
+              id: 34,
+              date: "分行",
+              name: "866000000",
+              address: "分行",
+              type: "启用",
+              customer: "有",
+              children: [
+                {
+                  id: 99,
+                  date: "支行",
+                  name: "866000000",
+                  address: "支行",
+                  type: "启用",
+                  customer: "有",
+                },
+                {
+                  id: 111,
+                  date: "支行",
+                  name: "866000000",
+                  address: "支行",
+                  type: "启用",
+                  customer: "有",
+                },
+              ],
+            },
+          ],
         },
         {
-          date: "2016-05-01",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1519 弄",
-          zip: 200333,
+          id: 3,
+          date: "总行",
+          name: "866000000",
+          address: "总行",
+          type: "暂停",
+          customer: "无",
+          children: [
+            {
+              id: 31,
+              date: "分行",
+              name: "866000000",
+              address: "分行",
+              type: "暂停",
+              customer: "无",
+            },
+            {
+              id: 32,
+              date: "分行",
+              name: "866000000",
+              address: "分行",
+              type: "暂停",
+              customer: "无",
+            },
+          ],
         },
         {
-          date: "2016-05-03",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1516 弄",
-          zip: 200333,
+          id: 4,
+          date: "总行",
+          name: "866000000",
+          address: "总行",
+          type: "启用",
+          customer: "有",
         },
       ],
     };
@@ -233,6 +208,7 @@ export default {
   methods: {
     //点击树节点
     handleNodeClick(data) {
+      alert("点击机构树");
       console.log(data);
     },
     //查询法人下有哪些机构
@@ -240,8 +216,8 @@ export default {
       alert(this.searchForm.searchType);
     },
     //新增
-    addBranch(){
-      alert('新增机构')
+    addBranch() {
+      alert("新增机构");
     },
     //查看
     handleClick(row) {
@@ -249,12 +225,14 @@ export default {
       console.log(row);
     },
     //修改
-    modifyBranch(row) {
+    handleEdit(index, row) {
+      console.log(index, row);
       alert(JSON.stringify(row));
     },
     //删除
-    delBranch(row) {
-      alert(JSON.stringify(row.date));
+    handleDelete(index, row) {
+      console.log(index, row);
+      alert(JSON.stringify(row));
     },
   },
 };
